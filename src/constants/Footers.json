@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Addresses",
+    "url": "/addresses",
+    "router": true,
+    "homeDisplay": false
+  },
+  {
+    "name": "GitHub",
+    "url": "#",
+    "router": false,
+    "homeDisplay": true
+  },
+  {
+    "name": "Medium",
+    "url": "https://amazons-dao.medium.com/",
+    "router": false,
+    "homeDisplay": true
+  },
+  {
+    "name": "Twitter",
+    "url": "https://twitter.com/AmazonsDao",
+    "router": false,
+    "homeDisplay": true
+  },
+  {
+    "name": "Discord",
+    "url": "https://discord.gg/UkmrTUB8h8",
+    "router": false,
+    "homeDisplay": true
+  },
+  {
+    "name": "Proposals",
+    "url": "https://snapshot.page/#/",
+    "router": false,
+    "homeDisplay": false
+  },
+  {
+    "name": "Medium",
+    "url": "https://medium.com/",
+    "router": false,
+    "homeDisplay": false
+  },
+  {
+    "name": "Forum",
+    "url": "https://",
+    "router": false,
+    "homeDisplay": false
+  },
+  {
+    "name": "FAQ",
+    "url": "https://docs.spartacus.finance/",
+    "router": false,
+    "homeDisplay": false
+  }
+]
