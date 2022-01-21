@@ -17,7 +17,7 @@ const Split: React.FC = ({ children }) => {
 };
 
 const StyledSplit = styled.div`
-  display: flex;
+  display: block;
   width: 100%;
   @media (max-width: 768px) {
     flex-flow: column nowrap;

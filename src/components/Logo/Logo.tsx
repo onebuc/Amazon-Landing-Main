@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Logo: React.FC = () => {
   return (
     <StyledLogo to="/">
-      <StyledEmoji>⚔</StyledEmoji>
+      <img src = "Amazons_line_.png" alt="AMZN" width="60" height="60"/>
       <StyledText>AmazonsDAO</StyledText>
     </StyledLogo>
   );

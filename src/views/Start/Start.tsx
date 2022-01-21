@@ -7,6 +7,7 @@ import {
   CardActions,
   CardContent,
   CardIcon,
+  CardTitle,
   Container,
   Separator,
   Spacer,
@@ -16,13 +17,16 @@ import styled from "styled-components";
 import StartPage from "components/StartPage";
 import StartPageHeader from "components/StartPageHeader";
 import StartSplit from "components/StartSplit";
+import StyledSocials from "components/StartPage";
+import { CardHeader } from "semantic-ui-react";
 
-const ASTRONAUTS = ["AMAZON DAO", "COMING SOON", "Ω 🍴", "⚔ 🏹"];
+
+const ASTRONAUTS = [<img src = "Amazons_logo.svg" alt="AMZN" width="500" height="500"/>];
 
 const Start: React.FC = () => {
-  const [astronaut, setAstronaut] = useState("⚔ 🏹");
-
-  const updateAstronaut = useCallback(() => {
+/*   const [astronaut, setAstronaut] = useState(<img src = "Amazons_logo.png" alt="AMZN" width="500" height="500"/>);
+ */
+/*   const updateAstronaut = useCallback(() => {
     const newAstro = ASTRONAUTS[Math.floor(Math.random() * ASTRONAUTS.length)];
     setAstronaut(newAstro);
   }, [setAstronaut]);
@@ -30,101 +34,68 @@ const Start: React.FC = () => {
   useEffect(() => {
     const refresh = setInterval(updateAstronaut, 1000);
     return () => clearInterval(refresh);
-  }, [updateAstronaut]);
+  }, [updateAstronaut]); */
 
   return (
     <StartPage>
+      <Spacer size="lg" />
+      <Spacer size="lg" /> 
+      <Spacer size="lg" /> 
+      <Spacer size="lg" /> 
       <StyledHero>
-        <StartPageHeader
-         icon={`${astronaut}`}
-         
+      <StartSplit> 
+        <Spacer size="sm" />
+        <CardContent>
+        <Spacer size="sm" />
+        <Button text="Docs" href="https://docs.amazonsdao.finance/"/>
+        <Spacer size="lg" />
+        <Button text="Twitter" href="https://twitter.com/AmazonsDao" variant="secondary"/>
+        <Spacer size="lg" />
+        <Button text="Medium" href="https://amazons-dao.medium.com/"/>
+      </CardContent>
+      
+      </StartSplit>
+
+        <Container size ="lg">
+         <StartPageHeader 
+          icon=""
           title="Find your place and grow your assets with DeFi 2.0, and $AMZN"
           subtitle="Take up arms and join our fight to create financial freedom. Join your brothers and sisters and find your place in our upcoming community run protocol."
-        />
-        <Container size="lg">
-          <Box row justifyContent="center">
-            <Button text="Open App" href="#" />
+          
+       />
+          </Container>
+        <Container size="lg" >
+          
+          <Box row justifyContent="flex-end" >
+            
+            <Button text="Open App" href="#" disabled />
             <Spacer />
             <Button
+              
               text="Join Discord"
               href="https://discord.gg/UkmrTUB8h8"
-              variant="secondary"
+              
             />
           </Box>
+ 
+          <Spacer size="lg"/>
         </Container>
+        
+
+        
+{/*           <Box row justifyContent="center">
+        <img src = "Aam_dao.png" alt="AMZN" width="500" height="500"/>
+        </Box> */}
+    
+        <Spacer size="lg" /> 
+      <Spacer size="lg" /> 
+      <Spacer size="lg" /> 
+      
       </StyledHero>
-      <Container size="lg">
-        <Spacer size="lg" />
-        <Separator />
-        <Spacer size="lg" />
-        <StyledSectionIcon>⚔</StyledSectionIcon>
-        <Spacer size="lg" />
-        <StyledSectionTitle>Fair finance for everyone.</StyledSectionTitle>
-        <StyledSectionDescription>
-          Spartacus is owned and controlled by our community of Λ token holders.
-        </StyledSectionDescription>
-        <Spacer size="lg" />
-        <StartSplit>
-          <Card>
-            <Spacer size="md" />
-            <CardIcon>💰</CardIcon>
-            <CardContent>
-              <StyledCardName>Treasury Expansion</StyledCardName>
-              <Spacer size="sm" />
-              <StyledCardDescription>
-                Our treasury will grow through a mix of bonding, and Liquidity Provider fees, increasing the intrisic risk free value of each AMZN token.
-              </StyledCardDescription>
-              <Spacer size="md" />
-              <CardIcon>⚔</CardIcon>
-              <StyledCardName>Community run, Community owned.</StyledCardName>
-              <Spacer size="md" />
-              <StyledCardDescription>
-              All holders of AMZN will have a say in the direction of the protocol through regular votes.
-              </StyledCardDescription>
-              <CardIcon>🔒</CardIcon>
-              <StyledCardName>Locked Liquidity</StyledCardName>
-              <Spacer size="md" />
-              <StyledCardDescription>
-              Liquidity will be locked for a MINIMUM of 10 years to ensure the saftey and prosperity of the protocol.
-              </StyledCardDescription>
-
-
-            </CardContent>
-            {/* <CardActions>
-              <Box row justifyContent="center">
-                <Button
-                  text="View treasury"
-                  variant="secondary"
-                  to="/dashboard"
-                />
-              </Box>
-            </CardActions> */}
-          </Card>
-{/*           <Card>
-            <Spacer size="md" />
-            <CardIcon>🏛️</CardIcon>
-            <CardContent>
-              <StyledCardName>Protocol Owned Liquidity</StyledCardName>
-              <Spacer size="sm" />
-              <StyledCardDescription>
-                No more predatory farmers. Lock-in liquidity also help regulate SPA supply.
-              </StyledCardDescription>
-            </CardContent>
-          </Card>
-          <Card>
-            <Spacer size="md" />
-            <CardIcon>🗣️</CardIcon>
-            <CardContent>
-              <StyledCardName>Decentralized Governance</StyledCardName>
-              <Spacer size="sm" />
-              <StyledCardDescription>
-                Λ holders decide Spartacus's future via on-chain voting.
-              </StyledCardDescription>
-            </CardContent>
-          </Card> */}
-        </StartSplit>
-      </Container>
     </StartPage>
+
+ 
+
   );
 };
 

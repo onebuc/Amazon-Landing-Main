@@ -26,11 +26,14 @@ const PageHeader: React.FC<PageHeaderProps> = ({ icon, subtitle, title }) => {
 
 const StyledPageHeader = styled.div`
   align-items: center;
+  padding-left: 250px;
   box-sizing: border-box;
-  display: flex;
+  display: block;
   flex-direction: column;
   padding-bottom: ${(props) => props.theme.spacing[6]}px;
   margin: 0 auto;
+  margin-left: -85px;
+  width: 150%;
 `;
 
 const StyledIcon = styled.span.attrs({
@@ -52,6 +55,7 @@ const StyledTitle = styled.h1`
   color: ${(props) => props.theme.textColor};
   font-size: 36px;
   font-weight: 700;
+  font-family: "Great Vibes", normal;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -64,8 +68,9 @@ const StyledSubtitle = styled.h3`
   color: ${(props) => props.theme.textColor};
   font-size: 18px;
   font-weight: 400;
+  font-family: "Great Vibes", normal;
   margin: 1;
-  opacity: 0.66;
+  opacity: 0.75;
   padding: 0;
   text-align: center;
   @media (max-width: 768px) {

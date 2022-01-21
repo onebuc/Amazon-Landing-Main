@@ -47,9 +47,9 @@ const Providers: React.FC = ({ children }) => {
   const [darkModeSetting] = useLocalStorage("darkMode", false);
   const { dark: darkTheme, light: lightTheme } = useMemo(() => {
     return createTheme({
-      baseColor: { h: 240, s: 100, l: 41 },
-      baseColorDark: { h: 229, s: 89, l: 50 },
-      borderRadius: 28,
+      baseColor: { h: 215, s: 100, l: 50 },
+      baseColorDark: { h: 0, s: 89, l: 50 },
+      borderRadius: 20,
     });
   }, []);
   return (

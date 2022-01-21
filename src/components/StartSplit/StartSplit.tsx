@@ -24,7 +24,10 @@ const StartSplit: React.FC<SplitProps> = ({ children, gapSize = 'md' }) => {
 
 const StyledSplit = styled.div`
   display: flex;
-  width: 100%;
+  width: 50%;
+  margin-bottom: 250px;
+  position:absolute;
+  right:200px;
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     align-items: center;

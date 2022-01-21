@@ -7,6 +7,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.tinted-image {
+  background-image: 
+    /* top, transparent red */
+    linear-gradient(
+      rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45)
+    ),
+    /* your image */
+    url(https://imgur.com/a/2iy7NuV);
+}
+
 h1,
 h2,
 h3,
