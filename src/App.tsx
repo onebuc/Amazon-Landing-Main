@@ -49,7 +49,7 @@ const Providers: React.FC = ({ children }) => {
     return createTheme({
       baseColor: { h: 215, s: 100, l: 50 },
       baseColorDark: { h: 0, s: 89, l: 50 },
-      borderRadius: 20,
+      borderRadius: 19,
     });
   }, []);
   return (
